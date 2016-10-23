@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>About BBYOS</title>
+    <title>Blake Boultbee</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
@@ -17,15 +17,24 @@
 
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Template styles -->
     <style rel="stylesheet">
         /* TEMPLATE STYLES */
         /* Necessary for full page carousel*/
         
-        html,
-        body {
-            height: 100%;
+      
+        
+        html{
+            height:100%;
+        }
+        
+        body{
+            height:100%;
+            position:relative;
         }
         /* Navigation*/
         
@@ -90,60 +99,57 @@
         .flex-center {
             color: #fff;
         }
-        
-       
-
-    
-        
     </style>
-
 </head>
 
 <body>
 
 
-    <!--Navbar-->
-    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar" style="background-color:#9C27B0">
+     <!--Navbar-->
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar"style = "background-color:#9C27B0">
         <!-- Collapse button-->
-        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx2">
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar">
             <i class="fa fa-bars"></i>
         </button>
 
         <div class="container">
 
             <!--Collapse content-->
-            <div class="collapse navbar-toggleable-xs" id="collapseEx2">
+            <div class="collapse navbar-toggleable-xs" id="myNavbar">
                 <!--Navbar Brand-->
-               
+                <a class="navbar-brand" href="index.html">BBYOS</a>
                 <!--Links-->
              
                 <ul class="nav navbar-nav">
                     
                     <li class="nav-item" style="float:right; background-color:#FFC107" >
-                            <a class="nav-link" href="#">Donate</a>
+                            <a class="nav-link" href="donate.html">Donate</a>
                     </li>
                    
                      <li class="nav-item" style="float:right">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#section1">Contact</a>
                     </li>
                        
                     
                     <li class="nav-item" style="float:right">
-                        <a class="nav-link" href="#">Our Services</a>
+                        <a class="nav-link" href="services.html">Our Services</a>
                     </li>
                         
-                      
-                        
+                    <li class="nav-item" style="float:right">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>  
+                        <!--
                          <li class="nav-item btn-group" style="float:right">
                             <a class="nav-link dropdown-toggle" id ="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
                             <div class="dropdown-menu" aria-labeledby="dropdownMenu1">
+                                <a href ="about.html" class ="dropdown-item">About Us</a>
                                 <a href ="about.html" class ="dropdown-item">Staff</a>
                                 <a href ="about.html" class ="dropdown-item">Board</a>
                                 <a href ="about.html" class ="dropdown-item">Donor</a>
                                 <a href ="about.html" class ="dropdown-item">Reports</a>
                             </div>
                             
-                        </li>
+                        </li> -->
                         
                 </ul>
                 
@@ -197,7 +203,8 @@
                             <br>
                             <!--Text-->
                             <p class="card-text">Donations can easily and securely be made through CanadaHelps.Org</p>
-                            <a href = "https://www.canadahelps.org/en/" class="btn btn-primary waves-effect waves-light">Read more</a>
+                            <br><br><br><br><br><br><br>
+                            <a target ="_blank" href = "https://www.canadahelps.org/dn/4075" class="btn btn-primary waves-effect waves-light">Donate</a>
                         </div>
                         <!--/.Card content-->
 
@@ -227,7 +234,8 @@
                             <!--Text-->
                             <p class="card-text"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>  Please select the <b>"Shipping is required"</b> option when donating to ensure that your address is included
                for tax receipt purpose</p>
-                            <a href = "https://www.paypal.com/webapps/shoppingcart?xclick_params=JTI2QXV0b1JldHVybiUzZHRydWUlMjZidXNpbmVzcyUzZGJieW9zJTI1NDBpbnRlcmxvZyUyZWNvbSUyNml0ZW1fbmFtZSUzZEJsYWtlJTI1MjBCb3VsdGJlZSUyNTIwWW91dGglMjUyME91dHJlYWNoJTI1MjBTZXJ2aWNlJTI2aXRlbV9udW1iZXIlM2QxMzY3NDgxNjdSUjAwMDElMjZub19ub3RlJTNkMSUyNmN1cnJlbmN5X2NvZGUlM2RDQUQlMjZ0YXglM2QwJTI2bGMlM2RDQSUyNmNoYXJzZXQlM2RVVEYlMmQ4JTI2JTI2d2FfdHlwZSUzZEJ1eU5vdyUyNg&flowlogging_id=55ef48c73b638#/checkout/openButton" class="btn btn-primary waves-effect waves-light">Donate</a>
+                            <br><br><br><br><br>
+                            <a target ="_blank" href = "https://www.paypal.com/webapps/shoppingcart?xclick_params=JTI2QXV0b1JldHVybiUzZHRydWUlMjZidXNpbmVzcyUzZGJieW9zJTI1NDBpbnRlcmxvZyUyZWNvbSUyNml0ZW1fbmFtZSUzZEJsYWtlJTI1MjBCb3VsdGJlZSUyNTIwWW91dGglMjUyME91dHJlYWNoJTI1MjBTZXJ2aWNlJTI2aXRlbV9udW1iZXIlM2QxMzY3NDgxNjdSUjAwMDElMjZub19ub3RlJTNkMSUyNmN1cnJlbmN5X2NvZGUlM2RDQUQlMjZ0YXglM2QwJTI2bGMlM2RDQSUyNmNoYXJzZXQlM2RVVEYlMmQ4JTI2JTI2d2FfdHlwZSUzZEJ1eU5vdyUyNg&flowlogging_id=55ef48c73b638#/checkout/openButton" class="btn btn-primary waves-effect waves-light">Donate</a>
                         </div>
                         <!--/.Card content-->
 
@@ -242,21 +250,23 @@
                     <div class="card">
 
                         <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="http://mdbootstrap.com/images/regular/city/img%20(8).jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask waves-effect waves-light"></div>
-                            </a>
+                        <div class="view overlay">
+                            <img src="http://wfarm2.dataknet.com/static/resources/icons/set35/50f6813d.png">
+                                
                         </div>
                         <!--/.Card image-->
-
+                        <hr>
                         <!--Card content-->
                         <div class="card-block">
                             <!--Title-->
-                            <h4 class="card-title">Card title</h4>
+                            <h3 class="card-title">By Cheque</h3>
                             <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary waves-effect waves-light">Read more</a>
+                            <p class="card-text">Make it payable to BBYOS and mail it to:</p>
+                           
+                               BBYOS, 41 Blake Street <br>
+                               Toronto, ON<br>
+                               M4J 3E2
+                           </p>
                         </div>
                         <!--/.Card content-->
 
@@ -269,36 +279,10 @@
         
         
         
-        <div class = "row">
-           
-           <div class ="col-sm-4">
-               <h3>Through CanadaHelps.org</h3>
-               <a target="_blank" href = "https://www.canadahelps.org/en/">
-                   <img src = "https://www.canadahelps.org/media/canadahelps-logo-thumbnail.png" style = "position:relative; top:40px" >
-               </a>
-           </div>
-           
-            <div class ="col-sm-4">
-               <h2 style = "position:relative; left:60px">With PayPal</h2>
-               <a target ="_blank" >
-                   <img src = "http://www.pngall.com/wp-content/uploads/2016/05/PayPal-Donate-Button-High-Quality-PNG.png" style = "width: 300px">
-               </a>
-               <p>Important: </p>
-           </div>
-           
-            <div class ="col-sm-4">
-               <h2 style = "position:relative; left:60px">By Cheque</h2>
-               <p>Make it payable to BBYOS and mail it to:</p>
-               <p>
-                   BBYOS<br>
-                   41 Blake Street <br>
-                   Toronto, Ontartio<br>
-                   M4J 3E2
-               </p>
-           </div>
-        </div>
+
     </div>
     
+    <div id = "section1" class ="container-fluid" ></div>
      <!--Footer-->
     <footer class="page-footer center-on-small-only">
         <div class="container">
@@ -363,7 +347,35 @@
 
 
     <!-- SCRIPTS -->
-
+    <script>
+    /* global $ */
+    $(document).ready(function(){
+      // Add scrollspy to <body>
+      $('body').scrollspy({target: ".navbar", offset: 50});
+    
+      // Add smooth scrolling on all links inside the navbar
+      $("#myNavbar a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        }  // End if
+      });
+    });
+    </script>
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 

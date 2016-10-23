@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>About BBYOS</title>
+    <title>Blake Boultbee</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
@@ -17,15 +17,24 @@
 
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Template styles -->
     <style rel="stylesheet">
         /* TEMPLATE STYLES */
         /* Necessary for full page carousel*/
         
-        html,
-        body {
-            height: 100%;
+      
+        
+        html{
+            height:100%;
+        }
+        
+        body{
+            height:100%;
+            position:relative;
         }
         /* Navigation*/
         
@@ -90,28 +99,25 @@
         .flex-center {
             color: #fff;
         }
-    
-        
     </style>
-
 </head>
 
 <body>
 
 
     <!--Navbar-->
-    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar" style="background-color:#9C27B0">
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar" style = "background-color:#9C27B0">
         <!-- Collapse button-->
-        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx2">
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar">
             <i class="fa fa-bars"></i>
         </button>
 
         <div class="container">
 
             <!--Collapse content-->
-            <div class="collapse navbar-toggleable-xs" id="collapseEx2">
+            <div class="collapse navbar-toggleable-xs" id="myNavbar">
                 <!--Navbar Brand-->
-               
+                <a class="navbar-brand" href="index.html">BBYOS</a>
                 <!--Links-->
              
                 <ul class="nav navbar-nav">
@@ -121,7 +127,7 @@
                     </li>
                    
                      <li class="nav-item" style="float:right">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#section1">Contact</a>
                     </li>
                        
                     
@@ -129,18 +135,21 @@
                         <a class="nav-link" href="services.html">Our Services</a>
                     </li>
                         
-                      
-                        
+                    <li class="nav-item" style="float:right">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>  
+                        <!--
                          <li class="nav-item btn-group" style="float:right">
                             <a class="nav-link dropdown-toggle" id ="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
                             <div class="dropdown-menu" aria-labeledby="dropdownMenu1">
+                                <a href ="about.html" class ="dropdown-item">About Us</a>
                                 <a href ="about.html" class ="dropdown-item">Staff</a>
                                 <a href ="about.html" class ="dropdown-item">Board</a>
                                 <a href ="about.html" class ="dropdown-item">Donor</a>
                                 <a href ="about.html" class ="dropdown-item">Reports</a>
                             </div>
                             
-                        </li>
+                        </li> -->
                         
                 </ul>
                 
@@ -229,8 +238,49 @@
         
          <br>
          <br>
-         <br>
-         <br>
+         
+         <div class = "container">
+             <div class = "row">
+                 <div class = "col-sm-3">
+                     <img src = "pictures/rod.jpg" style = "width: 250px; height:250px">
+                 </div>
+                 
+                 <div class = "col-sm-9">
+                     <h4 style = "font-weight:bold">Rod Cohen<br>
+                     Executive Director<br>
+                     B.A., O.S.P.(Clinical)<br>
+                     President of the Ontario Society of<br>
+                     Psychotherapists</h4>
+                     <p>Rod has operated and directed the BBYOS program since its opening in 1989. He came to the centre
+                     with a background in social work, psychology and psychotherapy. Rod is a Clinical Member of the Ontario 
+                     Society of Psychotherapists. His commitment has been to create the unique model of BBYOS, making intensive 
+                     and long-term service accessible to those who otherwise would not receive the specialized help that they need.
+                     </p>
+                     <br>
+                 </div>
+             </div>
+             
+              <div class = "row">
+                  <div class = "col-sm-3">
+                    <img src = "pictures/tiff.jpg" style = "width: 250px; height:250px">
+                 </div>
+                 
+                 <div class = "col-sm-9">
+                     <h4 style = "font-weight:bold">Tiffany Boxx<br>
+                     Executive Director<br>
+                     B.A., O.S.P.(Clinical)<br>
+                     President of the Ontario Society of<br>
+                     Psychotherapists</h4>
+                     <p>Rod has operated and directed the BBYOS program since its opening in 1989. He came to the centre
+                     with a background in social work, psychology and psychotherapy. Rod is a Clinical Member of the Ontario 
+                     Society of Psychotherapists. His commitment has been to create the unique model of BBYOS, making intensive 
+                     and long-term service accessible to those who otherwise would not receive the specialized help that they need.
+                     </p>
+                 </div>
+             </div>
+         </div>
+         
+         
         
         
     </div>
@@ -299,7 +349,7 @@
 </div>
 </div>
 
-      
+    <div id = "section1" class ="container-fluid" ></div>
     <!--Footer-->
     <footer class="page-footer center-on-small-only">
         <div class="container">
@@ -364,7 +414,36 @@
 
 
     <!-- SCRIPTS -->
-
+    <script>
+    /* global $ */
+    $(document).ready(function(){
+      // Add scrollspy to <body>
+      $('body').scrollspy({target: ".navbar", offset: 50});
+    
+      // Add smooth scrolling on all links inside the navbar
+      $("#myNavbar a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        }  // End if
+      });
+    });
+    </script>
+    
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 
